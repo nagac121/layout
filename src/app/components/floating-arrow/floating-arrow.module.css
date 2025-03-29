@@ -1,0 +1,41 @@
+.floatingArrow {
+  position: fixed; /* Ensures it's fixed to the page */
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  /* display: none;  */
+  display: flex; /* Change from 'none' to 'flex' */
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Start invisible */
+  pointer-events: none; /* Prevent clicks when hidden */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.floatingArrow.visible {
+  display: flex !important; /* Only visible when scrolled down */
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: auto; /* Enable clicks when visible */
+}
+
+.arrow {
+  background-color: #343a40;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover {
+  background-color: #555;
+}

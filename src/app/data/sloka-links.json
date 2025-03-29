@@ -1,0 +1,30 @@
+{
+  "ganapathi": [
+    {
+      "name": "Ganapathi slokam",
+      "path": "./ganapathi/suklam-baradaram.json"
+    },
+    {
+      "name": "Gajananam",
+      "path": "./ganapathi/gajananam.json"
+    },
+    {
+      "name": "Shiva Sloka 3",
+      "path": "shiva_sloka_3.txt"
+    }
+  ],
+  "vishnu": [
+    {
+      "name": "Vishnu Sloka 1",
+      "path": "vishnu_sloka_1.txt"
+    },
+    {
+      "name": "Vishnu Sloka 2",
+      "path": "vishnu_sloka_2.txt"
+    },
+    {
+      "name": "Vishnu Sloka 3",
+      "path": "vishnu_sloka_3.txt"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.sloka-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sloka-content {
+  white-space: pre-line; /* Preserve line breaks */
+  line-height: 1.5;
+}
+
+.sloka-line {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}

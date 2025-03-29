@@ -1,0 +1,104 @@
+@use "variables" as *;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* Hide scrollbar without blocking space */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+body {
+  font-size: 1.125rem;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: "Georgia", sans-serif;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 140vh;
+  scroll-behavior: smooth;
+}
+
+.header {
+  flex: 0 0 auto;
+  overflow: hidden;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.sloka-content {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px); /* Adjust height to account for footer */
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li div {
+  cursor: pointer;
+}
+
+li div:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: $small-screen) {
+  body {
+    font-size: 0.875rem;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+@media (min-width: #{$small-screen + 1}) and (max-width: $medium-screen) {
+  body {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}

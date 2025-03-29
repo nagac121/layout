@@ -1,0 +1,18 @@
+.default-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.ganapathi-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.ganapathi-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #333;
+}

@@ -1,0 +1,44 @@
+@use "variables" as *;
+
+/* Header styles */
+.header {
+  align-items: center;
+  background-color: #343a40; /* Dark background */
+  color: #fff; /* White text */
+  display: flex;
+  flex: 0 0 auto; /* Header takes up its content height */
+  font-family: var(--font-roboto-mono); /* Apply Roboto Mono to the header */
+  font-size: 1.5rem; /* Adjust text size */
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+}
+
+.home-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.header-text {
+  position: absolute; /* Position the text */
+  left: 50%; /* Center the text */
+  transform: translateX(-50%);
+}
+
+/* Responsive font sizes and padding */
+@media (max-width: $small-screen) {
+  /* Small screens */
+  .header {
+    font-size: 1.25rem;
+    color: red;
+  }
+}
+
+@media (min-width: #{$small-screen + 1}) and (max-width: $medium-screen) {
+  /* Medium screens */
+  .header {
+    font-size: 1.375rem;
+    color: green;
+  }
+}
