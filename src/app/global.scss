@@ -9,20 +9,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
 }
 
 html,
 body {
   height: 100%;
   margin: 0;
-  /* Hide scrollbar without blocking space */
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  overflow: visible !important;
+  scrollbar-width: auto !important; /* Firefox */
+  -ms-overflow-style: auto !important; /* Internet Explorer and Edge */
 }
 
 body {
@@ -34,7 +32,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .content-container {
   display: flex;
   flex: 1;
@@ -47,6 +44,7 @@ body {
   overflow-y: auto;
   min-height: 140vh;
   scroll-behavior: smooth;
+  padding-top: 56px;
 }
 
 .header {
